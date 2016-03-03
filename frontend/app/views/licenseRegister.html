@@ -1,0 +1,33 @@
+<div class="window-02" id="windowLicense">
+	<div id="intro">
+		<p translate="LICENSE_REGISTER_INTRO_TEXT_01"></p>
+		<p translate="LICENSE_REGISTER_INTRO_TEXT_02"></p>
+	</div>
+	<form id="license" ng-submit="submit();">
+		<div>
+			<label for="name" translate="LICENSE_REGISTER_FIELD_NAME"></label>
+			<input type="text" ng-model="form.name" id="name" maxlength="100" autocomplete="off" required />
+		</div>
+		<div>
+			<label for="email" translate="LICENSE_REGISTER_FIELD_EMAIL"></label>
+			<input type="email" ng-model="form.email" id="email" maxlength="100" autocomplete="off" required />
+		</div>
+		<div>
+			<label for="address" translate="LICENSE_REGISTER_FIELD_ADDRESS"></label>
+			<input type="text" ng-model="form.address" id="address" disabled="disabled" />
+		</div>
+		<div>
+			<label for="type" translate="LICENSE_REGISTER_FIELD_LICENSE_TYPE"></label>
+			<mu-select list="licenseTypeList" callback="selectLicenseType"></mu-select>
+		</div>
+		<div ng-if="form.licenseType == 1">
+			<a href="http://webcm.daldegam.com.br/api/index.php?/license/buyPremium&amp;email={{form.email}}" target="_blank" translate="LICENSE_REGISTER_FIELD_CLICK_TO_PAY"></a>
+		</div>
+		<div>
+			<input type="submit" />
+		</div>
+		<div ng-show="response != null" class="apiResponse">
+			<span translate="{{ response.code }}"></span>
+		</div>
+	</form>
+</div>

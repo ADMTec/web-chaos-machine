@@ -1,0 +1,54 @@
+<div class="window-04" ng-if="machineAlert != null">
+	<div id="messageCode">
+		<span translate="{{machineAlert.code}}"></span>
+	</div>
+	<input type="button" ng-click="machineAlertClose();" class="ok" />
+</div>
+<div class="window-01" ng-class="{ 'left' : selectedCharacter != null }">
+	<div id="intro">
+		<p translate="SELECT_CHARACTER_INTRO_TEXT_01"></p>
+		<p translate="SELECT_CHARACTER_INTRO_TEXT_02"></p>
+		<p translate="SELECT_CHARACTER_INTRO_TEXT_03"></p>
+	</div>
+	<form id="selectCharacter">
+		<div>
+			<label translate="SELECT_CHARACTER_LABEL_SELECT_CHARACTER"></label>
+			<mu-select list="characterList" callback="selectCharacter"></mu-select>
+		</div>
+	</form>
+</div>
+<div class="window-02" ng-if="selectedCharacter != null">
+	<form novalidate ng-submit="executeMix();">
+		<div id="selectMix">
+			<label translate="MACHINE_LABEL_SELECT_MIX"></label>
+			<mu-select list="mixList" callback="selectMix"></mu-select>
+		</div>
+		<div id="itemsIntoMachine">
+			<label translate="MACHINE_LABEL_ITEMS_INTO_MACHINE"></label>
+			<div class="muBorderBox">
+				<ul>
+					<li ng-repeat="item in characterItems | filter: { intoMachine: true } " ng-click="itemSelect(item);" rel="{{item.slot.i}}">{{item.itemName}} +{{item.itemLevel}}</li>
+				</ul>
+			</div>
+		</div>
+		<div id="statusMix">
+			<label translate="MACHINE_LABEL_STATUS_MIX"></label>
+			<div class="muBorderBox">
+				<ul>
+					<li ng-repeat="item in selectedMix.requirements" ng-class="{'danger' : item.haveAmount > item.amount, 'success' : item.haveAmount == item.amount}">
+						[{{item.haveAmount}}/{{item.amount}}] {{ item.translate | translate: { "oldLevel": selectedMix.result.oldLevel } }}{{item.itemName}}
+					</li>
+				</ul>
+			</div>
+			<label translate="MACHINE_LABEL_SUCCESS_RATE" translate-value-rate="{{selectedMix.details.percentage}}" ng-if="selectedMix != null"></label>
+		</div>
+		<div id="mixButton">
+			<input type="submit" ng-disabled="mixButtonState == false" />
+		</div>
+	</form>
+</div>
+<div class="window-03" ng-if="selectedCharacter != null">
+	<div id="characterInventory">
+		<mu-item item="item" ng-repeat="item in characterItems | filter: { intoMachine: false } " ng-click="itemSelect(item);" rel="{{item.slot.i}}"></mu-item>
+	</div>
+</div>

@@ -1,0 +1,386 @@
+/*
+	Interface API
+ */
+body {
+	background: url(../images/background-97d.jpg) repeat;
+}
+.season6 {
+	font-family: Verdana;
+	font-size: 12px;
+}
+.season6 .window-01 {
+	background: url(../images/resources-season6.png) no-repeat 0 0;
+	margin: 0 auto;
+	width: 388px;
+	height: 692px;
+}
+.season6 .window-01.left {
+	float: left;
+}
+.season6 .window-02 {
+	background: url(../images/resources-season6.png) no-repeat -388px 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 692px;
+	float: left;
+}
+.season6 .window-03 {
+	background: url(../images/resources-season6.png) no-repeat -688px 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 692px;
+	float: left;
+}
+.season6 .window-04 {
+	background: url(../images/resources-season6.png) no-repeat -988px -299px;
+	margin: 137px 205px;
+	width: 576px;
+	height: 393px;
+	position: absolute;
+	z-index: 100000;
+}
+.season6 input[type="text"],
+.season6 input[type="email"],
+.season6 input[type="password"] {
+	background: url(../images/resources-season6.png) no-repeat -1020px 0;
+	width: 171px;
+	height: 30px;
+	border: none;
+	color: #fff;
+	padding: 0 5px;
+	text-align: center;
+}
+.season6 input[type="submit"] {
+	background: url(../images/resources-season6.png) no-repeat -988px -33px;
+	width: 64px;
+	height: 50px;
+	border: none;
+	text-indent: -100000em;
+}
+.season6 input[type="submit"]:active {
+	background: url(../images/resources-season6.png) no-repeat -1052px -33px;
+}
+.season6 input[type="submit"]:disabled {
+	background: url(../images/resources-season6.png) no-repeat -1116px -33px;
+}
+.season6 input[type="button"].ok {
+	background: url(../images/resources-season6.png) no-repeat -988px -243px;
+	width: 34px;
+	height: 27px;
+	border: none;
+	text-indent: -100000em;
+	cursor: pointer;
+}
+.season6 input[type="button"].ok:active {
+	background: url(../images/resources-season6.png) no-repeat -1022px -243px;
+}
+.season6 label {
+	display: block;
+	color: #fff;
+}
+
+.season6 ul.select {
+	max-height: 174px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: pointer;
+}
+.season6 ul.select li {
+	background: url(../images/resources-season6.png) no-repeat -1020px 0;
+	width: 171px;
+	height: 29px;
+	border: none;
+	color: #fff;
+	padding: 0 5px;
+	text-align: center;
+	line-height: 29px;
+	display: none;
+}
+.season6 ul.select li.selected {
+	display: block;
+}
+.season6 .window-02 .muBorderBox {
+	background: url(../images/resources-season6.png) no-repeat -988px -83px;
+	width: 234px;
+	height: 122px;
+	padding: 3px;
+}
+.season6 .window-02 .muBorderBox ul {
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 234px;
+	height: 122px;
+}
+.season6 .window-02 .muBorderBox ul li {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.32);
+	color: #fff;
+	padding: 2px;
+}
+.season6 .window-02 .muBorderBox ul li:hover {
+	background: rgba(0, 0, 0, 0.42);
+}
+.season6 .window-03 mu-item {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: none;
+	position: absolute;
+}
+.season6 .window-03 mu-item.cursor {
+	cursor: pointer;
+}
+.season6 .window-03 mu-item div {
+	display: none;
+	position: absolute;
+	background: url(../images/x.png);
+	border: 2px solid #000000;
+	padding: 5px;
+	z-index: 10000;
+}
+.season6 .window-03 mu-item div p {
+	white-space: nowrap;
+	font-family: Verdana;
+	font-size: 13px;
+	text-align: center;
+	padding: 1px 0;
+}
+
+/*
+	Machine License
+ */
+.season6 .window-02#windowLicense {
+	float: inherit;
+}
+.season6 .window-02#windowLicense div#intro {
+	float: left; 
+	margin: 92px 20px 0 20px;
+}
+.season6 .window-02#windowLicense div#intro p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 19px;
+}
+.season6 .window-02#windowLicense form#license {
+	float: left; 
+	margin: 0px 61px;
+}
+.season6 .window-02#windowLicense form#license div {
+	margin: 10px 0;
+}
+.season6 .window-02#windowLicense form#license div a {
+	color: lime;
+	text-align: center;
+	width: 183px;
+	display: block;
+}
+.season6 .window-02#windowLicense form#license div label {
+	padding: 3px 0;
+}
+.season6 .window-02#windowLicense form#license div input[type="submit"] {
+	margin: 0 56px;
+}
+.season6 .window-02#windowLicense form#license div.apiResponse {
+	color: #FF0;
+	text-align: center;
+}
+
+/*
+	Machine Authentication
+ */
+.season6 .window-01 form#auth {
+	float: left; 
+	margin: 150px 104px;
+}
+.season6 .window-01 form#auth div {
+	margin: 10px 0;
+}
+.season6 .window-01 form#auth div label {
+	padding: 3px 0;
+}
+.season6 .window-01 form#auth div input[type="submit"] {
+	margin: 0 56px;
+}
+.season6 .window-01 form#auth div.apiResponse {
+	color: #FF0;
+	text-align: center;
+}
+
+
+/*
+	Machine Select Character
+ */
+.season6 .window-01 div#intro {
+	float: left; 
+	margin: 92px 54px 0 54px;
+}
+.season6 .window-01 div#intro p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 19px;
+}
+
+.season6 .window-01 form#selectCharacter {
+	float: left; 
+	margin: 0px 104px;
+}
+.season6 .window-01 form#selectCharacter div label {
+	padding-bottom: 13px;
+	text-align: center;
+	color: #ff0;
+}
+
+
+/*
+	Machine Mix
+ */
+.season6 .window-02 label {
+	padding-bottom: 13px;
+	text-align: center;
+	color: #ff0;
+}
+.season6 .window-02 div#selectMix {
+	position: absolute;
+	margin: 100px 60px 0 60px;
+	z-index: 10000;
+}
+.season6 .window-02 div#itemsIntoMachine {
+	position: absolute;
+	margin: 181px 0 0 29px;
+}
+.season6 .window-02 div#statusMix {
+	position: absolute;
+	margin: 355px 0 0 29px;
+}
+.season6 .window-02 div#statusMix .muBorderBox .success {
+    color: #19ff80;
+}
+.season6 .window-02 div#statusMix .muBorderBox .danger {
+    color: #FF5E5E; 
+}
+.season6 .window-02 div#statusMix label:last-child {
+	padding-top: 7px;
+}
+.season6 .window-02 div#mixButton {
+	position: absolute;
+	margin: 555px 0 0 115px;
+}
+
+
+/*
+	Machine Inventory
+ */
+.season6 .window-03 #characterInventory {
+	position: absolute;
+	margin: 320px 0 0 22px;
+	width: 256px;
+}
+
+.season6 .window-03 #characterInventory mu-item[rel="0"] {
+	/* boxLeftHand */
+	background: none;
+	margin: -178px 0 0 0;
+	width: 64px;
+	height: 96px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="1"] {
+	/* boxRightHand */
+	background: none;
+	margin: -178px 0 0 193px;
+	width: 64px;
+	height: 96px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="2"] {
+	/* boxHelm */
+	background: none;
+	margin: -249px 0 0 99px;
+	width: 64px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="3"] {
+	/* boxArmor */
+	background: none;
+	margin: -178px 0 0 99px;
+	width: 64px;
+	height: 96px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="4"] {
+	/* boxPants */
+	background: none;
+	margin: -77px 0 0 99px;
+	width: 64px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="5"] {
+	/* boxGloves */
+	background: none;
+	margin: -77px 0 0 3px;
+	width: 64px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="6"] {
+	/* boxBoots */
+	background: none;
+	margin: -77px 0 0 196px;
+	width: 64px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="7"] {
+	/* boxWing */
+	background: none;
+	margin: -249px 0 0 168px;
+	width: 94px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="8"] {
+	/* boxPet */
+	background: none;
+	margin: -249px 0 0 4px;
+	width: 64px;
+	height: 64px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="9"] {
+	/* boxPendant */
+	background: none;
+	margin: -178px 0 0 64px;
+	width: 32px;
+	height: 32px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="10"] {
+	/* boxLeftRing */
+	background: none;
+	margin: -77px 0 0 64px;
+	width: 32px;
+	height: 32px;
+}
+.season6 .window-03 #characterInventory mu-item[rel="11"] {
+	/* boxRightRing */
+	background: none;
+	margin: -77px 0 0 163px;
+	width: 32px;
+	height: 32px;
+}
+
+
+/*
+	Machine Alert
+ */
+.season6 .window-04 { }
+.season6 .window-04 #messageCode {
+	position: absolute;
+	margin: 102px 0 0 260px;
+	width: 260px;
+	text-align: center;
+}
+.season6 .window-04 #messageCode span {
+	color: #fff;
+	font-size: 18px;
+	line-height: 27px;
+}
+.season6 .window-04 input[type="button"] {
+	margin: 293px 0 0 380px;
+}

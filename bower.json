@@ -1,0 +1,18 @@
+{
+  "name": "web-chaos-machine",
+  "description": "Web Chaos Machine",
+  "version": "1.0.0",
+  "homepage": "https://github.com/daldegam/web-chaos-machine.git",
+  "private": true,
+  "authors": [
+    "Leandro Daldegam <leandro@daldegam.com.br>"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.15",
+    "angular-locker": "~1.2.1",
+    "angular-translate": "~2.7.0",
+    "angular-translate-loader-static-files": "~2.7.0"
+  }
+}

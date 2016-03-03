@@ -1,0 +1,386 @@
+/*
+	Interface API
+ */
+body {
+	background: url(../images/background-97d.jpg) repeat;
+}
+.v97d {
+	font-family: Verdana;
+	font-size: 12px;
+}
+.v97d .window-01 {
+	background: url(../images/resources-97d.png) no-repeat 0 0;
+	margin: 0 auto;
+	width: 388px;
+	height: 692px;
+}
+.v97d .window-01.left {
+	float: left;
+}
+.v97d .window-02 {
+	background: url(../images/resources-97d.png) no-repeat -388px 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 692px;
+	float: left;
+}
+.v97d .window-03 {
+	background: url(../images/resources-97d.png) no-repeat -688px 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 692px;
+	float: left;
+}
+.v97d .window-04 {
+	background: url(../images/resources-97d.png) no-repeat -988px -299px;
+	margin: 137px 205px;
+	width: 576px;
+	height: 393px;
+	position: absolute;
+	z-index: 100000;
+}
+.v97d input[type="text"],
+.v97d input[type="email"],
+.v97d input[type="password"] {
+	background: url(../images/resources-97d.png) no-repeat -1020px 0;
+	width: 171px;
+	height: 30px;
+	border: none;
+	color: #fff;
+	padding: 0 5px;
+	text-align: center;
+}
+.v97d input[type="submit"] {
+	background: url(../images/resources-97d.png) no-repeat -988px -32px;
+	width: 70px;
+	height: 51px;
+	border: none;
+	text-indent: -100000em;
+}
+.v97d input[type="submit"]:active {
+	background: url(../images/resources-97d.png) no-repeat -1058px -32px;
+}
+.v97d input[type="submit"]:disabled {
+	background: url(../images/resources-97d.png) no-repeat -1128px -32px;
+}
+.v97d input[type="button"].ok {
+	background: url(../images/resources-97d.png) no-repeat -988px -243px;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: -100000em;
+	cursor: pointer;
+}
+.v97d input[type="button"].ok:active {
+	background: url(../images/resources-97d.png) no-repeat -1020px -243px;
+}
+.v97d label {
+	display: block;
+	color: #fff;
+}
+
+.v97d ul.select {
+	max-height: 174px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	cursor: pointer;
+}
+.v97d ul.select li {
+	background: url(../images/resources-97d.png) no-repeat -1020px 0;
+	width: 171px;
+	height: 29px;
+	border: none;
+	color: #fff;
+	padding: 0 5px;
+	text-align: center;
+	line-height: 29px;
+	display: none;
+}
+.v97d ul.select li.selected {
+	display: block;
+}
+.v97d .window-02 .muBorderBox {
+	background: url(../images/resources-97d.png) no-repeat -988px -83px;
+	width: 234px;
+	height: 122px;
+	padding: 3px;
+}
+.v97d .window-02 .muBorderBox ul {
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 234px;
+	height: 122px;
+}
+.v97d .window-02 .muBorderBox ul li {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.32);
+	color: #fff;
+	padding: 2px;
+}
+.v97d .window-02 .muBorderBox ul li:hover {
+	background: rgba(0, 0, 0, 0.42);
+}
+.v97d .window-03 mu-item {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: none;
+	position: absolute;
+}
+.v97d .window-03 mu-item.cursor {
+	cursor: pointer;
+}
+.v97d .window-03 mu-item div {
+	display: none;
+	position: absolute;
+	background: url(../images/x.png);
+	border: 2px solid #000000;
+	padding: 5px;
+	z-index: 10000;
+}
+.v97d .window-03 mu-item div p {
+	white-space: nowrap;
+	font-family: Verdana;
+	font-size: 13px;
+	text-align: center;
+	padding: 1px 0;
+}
+
+/*
+	Machine License
+ */
+.v97d .window-02#windowLicense {
+	float: inherit;
+}
+.v97d .window-02#windowLicense div#intro {
+	float: left; 
+	margin: 92px 20px 0 20px;
+}
+.v97d .window-02#windowLicense div#intro p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 19px;
+}
+.v97d .window-02#windowLicense form#license {
+	float: left; 
+	margin: 0px 61px;
+}
+.v97d .window-02#windowLicense form#license div {
+	margin: 10px 0;
+}
+.v97d .window-02#windowLicense form#license div a {
+	color: lime;
+	text-align: center;
+	width: 183px;
+	display: block;
+}
+.v97d .window-02#windowLicense form#license div label {
+	padding: 3px 0;
+}
+.v97d .window-02#windowLicense form#license div input[type="submit"] {
+	margin: 0 56px;
+}
+.v97d .window-02#windowLicense form#license div.apiResponse {
+	color: #FF0;
+	text-align: center;
+}
+
+/*
+	Machine Authentication
+ */
+.v97d .window-01 form#auth {
+	float: left; 
+	margin: 150px 104px;
+}
+.v97d .window-01 form#auth div {
+	margin: 10px 0;
+}
+.v97d .window-01 form#auth div label {
+	padding: 3px 0;
+}
+.v97d .window-01 form#auth div input[type="submit"] {
+	margin: 0 56px;
+}
+.v97d .window-01 form#auth div.apiResponse {
+	color: #FF0;
+	text-align: center;
+}
+
+
+/*
+	Machine Select Character
+ */
+.v97d .window-01 div#intro {
+	float: left; 
+	margin: 92px 54px 0 54px;
+}
+.v97d .window-01 div#intro p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding-bottom: 19px;
+}
+
+.v97d .window-01 form#selectCharacter {
+	float: left; 
+	margin: 0px 104px;
+}
+.v97d .window-01 form#selectCharacter div label {
+	padding-bottom: 13px;
+	text-align: center;
+	color: #ff0;
+}
+
+
+/*
+	Machine Mix
+ */
+.v97d .window-02 label {
+	padding-bottom: 13px;
+	text-align: center;
+	color: #ff0;
+}
+.v97d .window-02 div#selectMix {
+	position: absolute;
+	margin: 100px 60px 0 60px;
+	z-index: 10000;
+}
+.v97d .window-02 div#itemsIntoMachine {
+	position: absolute;
+	margin: 181px 0 0 29px;
+}
+.v97d .window-02 div#statusMix {
+	position: absolute;
+	margin: 355px 0 0 29px;
+}
+.v97d .window-02 div#statusMix .muBorderBox .success {
+    color: #19ff80;
+}
+.v97d .window-02 div#statusMix .muBorderBox .danger {
+    color: #FF5E5E; 
+}
+.v97d .window-02 div#statusMix label:last-child {
+	padding-top: 7px;
+}
+.v97d .window-02 div#mixButton {
+	position: absolute;
+	margin: 555px 0 0 115px;
+}
+
+
+/*
+	Machine Inventory
+ */
+.v97d .window-03 #characterInventory {
+	position: absolute;
+	margin: 320px 0 0 22px;
+	width: 256px;
+}
+
+.v97d .window-03 #characterInventory mu-item[rel="0"] {
+	/* boxLeftHand */
+	background: none;
+	margin: -178px 0 0 0;
+	width: 64px;
+	height: 96px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="1"] {
+	/* boxRightHand */
+	background: none;
+	margin: -178px 0 0 190px;
+	width: 64px;
+	height: 96px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="2"] {
+	/* boxHelm */
+	background: none;
+	margin: -246px 0 0 96px;
+	width: 64px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="3"] {
+	/* boxArmor */
+	background: none;
+	margin: -178px 0 0 96px;
+	width: 64px;
+	height: 96px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="4"] {
+	/* boxPants */
+	background: none;
+	margin: -77px 0 0 96px;
+	width: 64px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="5"] {
+	/* boxGloves */
+	background: none;
+	margin: -77px 0 0 0;
+	width: 64px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="6"] {
+	/* boxBoots */
+	background: none;
+	margin: -77px 0 0 190px;
+	width: 64px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="7"] {
+	/* boxWing */
+	background: none;
+	margin: -246px 0 0 160px;
+	width: 94px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="8"] {
+	/* boxPet */
+	background: none;
+	margin: -246px 0 0 0;
+	width: 64px;
+	height: 64px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="9"] {
+	/* boxPendant */
+	background: none;
+	margin: -178px 0 0 64px;
+	width: 32px;
+	height: 32px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="10"] {
+	/* boxLeftRing */
+	background: none;
+	margin: -77px 0 0 64px;
+	width: 32px;
+	height: 32px;
+}
+.v97d .window-03 #characterInventory mu-item[rel="11"] {
+	/* boxRightRing */
+	background: none;
+	margin: -77px 0 0 160px;
+	width: 32px;
+	height: 32px;
+}
+
+
+/*
+	Machine Alert
+ */
+.v97d .window-04 { }
+.v97d .window-04 #messageCode {
+	position: absolute;
+	margin: 102px 0 0 260px;
+	width: 260px;
+	text-align: center;
+}
+.v97d .window-04 #messageCode span {
+	color: #fff;
+	font-size: 18px;
+	line-height: 27px;
+}
+.v97d .window-04 input[type="button"] {
+	margin: 293px 0 0 380px;
+}

@@ -1,0 +1,18 @@
+<div class="window-01">
+	<form id="auth" ng-submit="submit();">
+		<div>
+			<label for="username" translate="AUTHENTICATION_LABEL_USERNAME">Usuário:</label>
+			<input type="text" ng-model="form.username" id="username" maxlength="10" autocomplete="off" required />
+		</div>
+		<div>
+			<label for="password" translate="AUTHENTICATION_LABEL_PASSWORD">Senha:</label>
+			<input type="password" ng-model="form.password" id="password" maxlength="10" required />
+		</div>
+		<div>
+			<input type="submit" />
+		</div>
+		<div ng-show="response != null" class="apiResponse">
+			<span translate="{{ response.code }}"></span>
+		</div>
+	</form>
+</div>
